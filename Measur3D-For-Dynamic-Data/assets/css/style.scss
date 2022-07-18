@@ -1,0 +1,39 @@
+---
+---
+
+@import 'jekyll-theme-cayman';
+
+:root {
+  --font-color: rgba(0, 0, 0, 1);
+  --font-color-h: rgba(0, 0, 0, 0.75);
+}
+
+/* Adjust the app to window */
+html,
+body {
+  margin: 0;
+  color: var(--font-color);
+}
+
+body > section.page-header {
+  padding: 0;
+  color: var(--font-color);
+}
+
+body > section.page-header {
+  display: none
+}
+
+body > section.main-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+body > section.main-content > h1,
+body > section.main-content > h2 {
+  color: var(--font-color-h);
+}
+
+body > section.main-content > p:nth-child(27) > img {
+  text-align: center
+}
