@@ -39,7 +39,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: rgb(221, 220, 220);
+  background-color: rgb(230, 230, 230);
 }
 
 #MPA > div.swagger-ui {
