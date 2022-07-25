@@ -50,7 +50,7 @@ class Chart extends React.Component {
         data = [];
 
       for (const el in dataset.data) {
-        labels.push(Date(dataset.data[el].time.instant));
+        labels.push(dataset.data[el].time.instant);
         data.push(dataset.data[el].value.value);
       }
 
