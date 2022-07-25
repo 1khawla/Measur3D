@@ -32,7 +32,7 @@ class Chart extends React.Component {
         data = [];
 
       for (const el in info.searchData) {
-        labels.push(Date(info.searchData[el].time.instant));
+        labels.push(info.searchData[el].time.instant);
         data.push(info.searchData[el].value.value);
       }
 
