@@ -83,7 +83,7 @@ export async function loadCityModel(threescene, cm_uid) {
         } else if (
           json.CityObjects[cityObj].geometry[0].type !== "MultiPoint"
         ) {
-          var material = new THREE.MeshPhysicalMaterial({ wireframe: true });
+          var material = new THREE.MeshBasicMaterial({ wireframe: true });
           material.color.setHex(ALLCOLOURS[cityobjectType]);
 
           var coMesh = new THREE.Mesh(geometry, material);
@@ -455,11 +455,11 @@ export function intersectMeshes(event, threescene) {
         threescene.highlighted.currentHex =
           threescene.highlighted.material.emissive.getHex();
         threescene.highlighted.material.emissive.setHex(0xffffff);
-        threescene.highlighted.material.emissiveIntensity = 0.2;
+        threescene.highlighted.material.emissiveIntensity = 0;
       } else {
         threescene.highlighted.currentHex =
           threescene.highlighted.material.color.getHex();
-        threescene.highlighted.material.color.setHex(0xffffff);
+        threescene.highlighted.material.color.setHex(0xf22445);
       }
     }
   } else {
