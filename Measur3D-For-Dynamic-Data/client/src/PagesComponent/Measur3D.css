@@ -89,7 +89,7 @@ a {
 /* AttributesManager colors */
 #AttributesManager > div {
   background:  var(--background-color);
-  color: rgb(252, 165, 5);
+  color: rgb(255, 188, 5);
   box-shadow: none;
   border-radius: 0;
   border: none;
