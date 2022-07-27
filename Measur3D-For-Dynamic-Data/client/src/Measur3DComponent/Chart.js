@@ -79,11 +79,11 @@ class Chart extends React.Component {
               id: 1,
               label: " Dynamic_Data",
               data: this.state.data,
-              backgroundColor:  "#ff6111",
+              backgroundColor:  "#FF6500",
               borderColor: "#jjj555",
               borderWidth: 1,
               pointRadius: 3,
-              pointBackgroundColor: "#ff6111",
+              pointBackgroundColor: "#FF6500",
             
             },
           ],
