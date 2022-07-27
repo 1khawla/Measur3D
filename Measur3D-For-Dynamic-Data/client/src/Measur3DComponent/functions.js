@@ -94,7 +94,7 @@ export async function loadCityModel(threescene, cm_uid) {
           if(json.CityObjects[cityObj].attributes){
             if("+Dynamizer" in json.CityObjects[cityObj].attributes){
               console.log('true')
-              material.color.setHex(0xEC0E0E);
+              material.color.setHex(0x2372F2);
             }else{
               console.log('false')
             }
@@ -476,7 +476,7 @@ export function intersectMeshes(event, threescene) {
       } else {
         threescene.highlighted.currentHex =
           threescene.highlighted.material.color.getHex();
-        threescene.highlighted.material.color.setHex(0x5D48F9);
+        threescene.highlighted.material.color.setHex(0xFB8705);
       }
     }
   } else {
