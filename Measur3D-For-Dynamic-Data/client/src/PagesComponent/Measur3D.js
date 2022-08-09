@@ -124,9 +124,9 @@ class Measur3D extends Component {
             <ThreeScene />
           </div>
           <div id="bottomPane">
-            <SplitPane split="vertical" minSize="50%" defaultSize="70%">
+            <SplitPane split="vertical" minSize="50%" defaultSize="69%">
              
-             <SplitPane split="vertical" minSize="50%" defaultSize="42.7%">
+             <SplitPane split="vertical" minSize="50%" defaultSize="43.8%">
               <div id="AttributesManager">
                 <AttributesManager />
               </div>
