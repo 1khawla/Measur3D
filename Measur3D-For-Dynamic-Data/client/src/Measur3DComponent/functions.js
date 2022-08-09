@@ -334,7 +334,7 @@ async function parseObject(object) {
 
     var color = new THREE.Color(ALLCOLOURS[object.cityobjectType]);
     if (object.attributes) {
-      if ("+Dynamizer in object.attributes) {
+      if ("+Dynamizer" in object.attributes) {
           console.log('true')
           material.color.setHex(0x43B0F1);
       }else {
