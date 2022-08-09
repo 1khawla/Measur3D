@@ -100,7 +100,7 @@ export async function loadCityModel(threescene, cm_uid) {
   
           }
 
-          var coMesh = new THREE.Mesh(geometry, material);
+          
           
         } 
         else {
@@ -332,7 +332,15 @@ async function parseObject(object) {
 
     const colors = [];
 
-    const color = new THREE.Color(ALLCOLOURS[object.cityobjectType]);
+    var color = new THREE.Color(ALLCOLOURS[object.cityobjectType]);
+    if (object.attributes) {
+      if ("+Dynamizer in object.attributes) {
+          console.log('true')
+          material.color.setHex(0x43B0F1);
+      }else {
+          console.log('false')
+      }
+    };
     for (let i = 0; i < positionAttribute.count; i += 3) {
       colors.push(color.r, color.g, color.b);
       colors.push(color.r, color.g, color.b);
