@@ -69,7 +69,7 @@ class ThreeScene extends Component {
 
     //ADD RENDERER
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
-    this.renderer.setClearColor("#B1E1FF");
+    this.renderer.setClearColor("#FFFFFF");
     this.renderer.setSize(width, height);
     this.mount.appendChild(this.renderer.domElement);
 
@@ -82,7 +82,7 @@ class ThreeScene extends Component {
 
     //add AmbientLight (light that is only there that there's a minimum of light and you can see color)
     //kind of the natural daylight
-    var am_light = new THREE.AmbientLight(0x666666, 1.0); // soft white light
+    var am_light = new THREE.AmbientLight(0x666666, 1.5); // soft white light
     this.scene.add(am_light);
 
     /*
