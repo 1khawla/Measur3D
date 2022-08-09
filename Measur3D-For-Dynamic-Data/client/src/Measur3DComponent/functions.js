@@ -79,11 +79,6 @@ export async function loadCityModel(threescene, cm_uid) {
 
         //set color of object
         
-        // if("+Dynamizer" in json.CityObjects[cityObj].attributes){
-        //   console.log('true')
-        // }else{
-        //   console.log('false')
-        // }
         if (json.CityObjects[cityObj].geometry[0] == null) {
           console.log("No geometry for : " + cityObj);
         } else if (json.CityObjects[cityObj].geometry[0].type !== "MultiPoint") {
